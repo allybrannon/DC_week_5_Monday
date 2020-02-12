@@ -1,0 +1,63 @@
+body {
+    background: url("chuck3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto-Mono', monospace;
+}
+
+ul{
+    font-size: medium;
+}
+ 
+h1, #categorySelectLabel, #chuckSays {
+    text-shadow: 2px 4px 2px black;
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.modal-overlay.open {
+    display: flex;
+}
+.modal-content .modal-close {
+    background-image: url("chuck3.jpg");
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    padding: 2px;
+    font-size: 16px;
+    top: 12px;
+    right: 12px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    z-index: 10900;
+}
+
+.modal-content {
+    background-color: grey;
+    border-radius: 4px;
+    margin: auto;
+    width: 640px;
+    height: auto;
+    position: relative;
+    z-index: 10000;
+}
+.modal-content p {
+    font-size: 2rem;
+}
